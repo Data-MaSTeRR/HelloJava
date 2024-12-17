@@ -8,7 +8,7 @@ public class Student {
 	private String name;
 	private int[] marks;
 
-	public Student(String name, int[] marks) {
+	public Student(String name, int... marks) { // 가변 인수 사용 (인수의 마지막에 와야 인식함) 
 		this.name = name;
 		this.marks = marks;
 	}
