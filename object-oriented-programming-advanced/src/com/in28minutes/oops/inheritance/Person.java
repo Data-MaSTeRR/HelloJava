@@ -1,6 +1,6 @@
 package com.in28minutes.oops.inheritance;
 
-public class Person {
+public class Person extends Object { // Object 에서 상속받는 것은 기본값 
 	
 	// State
 	private String name;
