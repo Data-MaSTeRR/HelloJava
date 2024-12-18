@@ -1,11 +1,12 @@
 package com.in28minutes.oops;
 
 public class MotorBike {
-
-	// State
+	
+	// State ... 1
 	private int speed; // member variable
 
-	// 생성자
+	
+	// Constructor ... 2
 	public MotorBike() {
 		// this.speed = 5;
 		this(5);
@@ -15,7 +16,8 @@ public class MotorBike {
 		this.speed = speed;
 	}
 
-	// Behavior
+	
+	// Behavior ... 3 
 	public void setSpeed(int speed) { // local variable
 		if (speed > 0) {
 			this.speed = speed;
