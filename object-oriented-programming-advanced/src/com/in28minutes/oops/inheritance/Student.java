@@ -21,4 +21,10 @@ public class Student extends Person {
 		this.year = year;
 	}
 	
+	
+	// Overriding 
+	public String toString() {
+		return collegeName + ", " + year;
+	}
+	
 }
