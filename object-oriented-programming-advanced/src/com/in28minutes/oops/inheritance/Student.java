@@ -24,7 +24,7 @@ public class Student extends Person {
 	
 	// Overriding 
 	public String toString() {
-		// super는 상위 클래스에서 값을 가져오게 해줌 
+		// super 는 상위 클래스에서 값을 가져오게 해줌 
 		return super.getName() + ", " + super.getEmail() + ", " + super.getPhoneNumber() + ", " + collegeName + ", " + year;
 	}
 	
