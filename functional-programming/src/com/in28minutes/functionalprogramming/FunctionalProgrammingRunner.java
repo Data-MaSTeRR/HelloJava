@@ -27,8 +27,8 @@ public class FunctionalProgrammingRunner {
 	// "at"으로 끝나는 것 filter
 	private static void printWithFPWithFiltering(List<String> list) {
 		list.stream()
-			.filter(element -> element.endsWith("at"))
-			.forEach(element -> System.out.println("Element: " + element));
+			.filter(element -> element.endsWith("at")) // 중간 연산 
+			.forEach(element -> System.out.println("Element: " + element)); // 중간 연산 
 	}
 
 }
