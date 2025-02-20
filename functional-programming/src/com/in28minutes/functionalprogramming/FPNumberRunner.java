@@ -11,7 +11,7 @@ public class FPNumberRunner {
 		numbers.stream()
 				.forEach( element -> System.out.println(element));
 		
-		// 0은 초기값 역할 
+		// 0은 초기값 역할, reduce는 스트림 요소들을 누적하여 하나의 결과값으로 만드는 연산을 수
 		int sum = numbers.stream().reduce(
 				0, 
 				(number1, number2) -> number1 + number2 
