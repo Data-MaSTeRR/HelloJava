@@ -37,7 +37,7 @@ public class FPNumberRunner {
 	}
 	
 	// 리스트의 총합 
-	// 함수형 프로그래밍 - stream
+	// 함수형 프로그래밍 - stream()
 	private static int fpSum(List<Integer> numbers) {
 		return numbers.stream().reduce(0, (number1, number2) -> number1 + number2 );
 	}
