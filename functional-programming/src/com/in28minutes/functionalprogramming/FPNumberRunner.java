@@ -30,7 +30,7 @@ public class FPNumberRunner {
 		System.out.println(List.of(23, 12, 34, 53).stream().filter(e -> e%2==0).collect(Collectors.toList()));
 		System.out.println(IntStream.range(1, 11).map(e -> e * e).boxed().collect(Collectors.toList()));
 		
-		// Optiona 객체를 이용하여 - null 방지 
+		// Optional 객체를 이용하여 - null 방지 
 		System.out.println(List.of(23, 12, 34, 53).stream().filter(e -> e%2==1).max((n1,n2) -> Integer.compare(n1, n2)));
 		System.out.println(List.of(23, 12, 34, 53).stream().filter(e -> e%2==1).max((n1,n2) -> Integer.compare(n1, n2)).get());
 
