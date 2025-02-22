@@ -23,8 +23,15 @@ public class MethodReferenceRunner {
 		List.of("Ant", "Bat", "Cat", "Dog", "Elephant")
 			.stream().map(String::length)
 			.forEach(MethodReferenceRunner::print);
+		
+		// Integer::compare 많이 사용함 
+		Integer maxList = List.of(23, 45, 67, 34).stream()
+			.filter(n -> n%2 == 0)
+			.max(Integer::compare)
+			.get()
+			;
+		System.out.println(maxList);
 			
-
 	}
 
 }
