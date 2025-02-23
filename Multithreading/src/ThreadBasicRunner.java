@@ -1,3 +1,12 @@
+/* 용어정리
+ * NEW - 객체 선언 
+ * RUNNABLE - 스레드 동작중 다른 스레드가 실행중 
+ * RUNNING - 해당 스레드 실행
+ * BLOCKED/WAITING - 스레드 외부 인터페이스 입력으로부터 대기상
+ * TERMINATED/DEAD - 스레드 종료 
+ */
+
+
 // extends Thread
 // implements Runnable
 
