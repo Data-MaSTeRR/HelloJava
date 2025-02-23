@@ -38,7 +38,7 @@ class Task2 implements Runnable {
 }
 public class ThreadBasicRunner {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		//Task1 - Thread만 (방법1)
 		Task1 task1 = new Task1();
@@ -52,7 +52,13 @@ public class ThreadBasicRunner {
 		task2Thread.setPriority(10); // 1~10 사이의 숫자. 숫자가 클수록 우선순위 빠름. 
 		task2Thread.start(); // -> 병렬 처리 
 		
-		//Task3 - 메인 메서드에 그냥 
+		// wait for task1 to complete. task1이 끝나야 task3 시작!
+		task1.join();
+		
+		// task2도 추가
+		task2Thread.join();
+		
+		//Task3 - 메인 메서드에 그냥. Thread에서 실행되는 것은 아님! 
 		System.out.print("Task3 Started\n");
 		for (int i=301; i<=400; i++) {
 			System.out.print(i + " ");
