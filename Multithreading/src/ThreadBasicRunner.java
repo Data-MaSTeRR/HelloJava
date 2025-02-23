@@ -40,17 +40,19 @@ public class ThreadBasicRunner {
 
 	public static void main(String[] args) {
 		
-		//Task1
+		//Task1 - Thread만 (방법1)
 		Task1 task1 = new Task1();
+		task1.setPriority(1); 
 		// task1.run(); -> 직렬 처리 
 		task1.start(); // -> 병렬 처리 
 		
-		//Task2
+		//Task2 - Runnable, Thread 같이 (방법2) 
 		Task2 task2 = new Task2();
 		Thread task2Thread = new Thread(task2); // Runnable 클래스의 객체를 처리하려면, Thread 클래스에 감싸야함 
+		task2Thread.setPriority(10); // 1~10 사이의 숫자. 숫자가 클수록 우선순위 빠름. 
 		task2Thread.start(); // -> 병렬 처리 
 		
-		//Task3
+		//Task3 - 메인 메서드에 그냥 
 		System.out.print("Task3 Started\n");
 		for (int i=301; i<=400; i++) {
 			System.out.print(i + " ");
