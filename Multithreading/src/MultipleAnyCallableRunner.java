@@ -2,7 +2,6 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService; // 스레드 풀 관리를 위한 ExecutorService 
 import java.util.concurrent.Executors; // ExecutorService를 생성하기 위한 Executors
-import java.util.concurrent.Future; // 비동기 작업의 결과를 나타내는 Future 인터페이스
 
 public class MultipleAnyCallableRunner {
 
