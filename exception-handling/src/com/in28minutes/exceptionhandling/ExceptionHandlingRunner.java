@@ -16,6 +16,7 @@ public class ExceptionHandlingRunner {
 	private static void method2() {
 		String str = null;
 		str.length();
+		System.out.println("Method2 Ended");
 	}
 
 }
